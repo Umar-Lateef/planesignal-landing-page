@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — planesignal</title>
+  <meta name="robots" content="index, follow" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%231E2018'/%3E%3Cpath d='M20 4 C24 4 32 10 30 18 L24 16 L23 27 L20 31 L17 27 L16 16 L10 18 C8 10 16 4 20 4Z' fill='%23F4F4EE'/%3E%3Ccircle cx='20' cy='34' r='2' fill='%23A8D800'/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#1E2018" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Hedvig+Letters+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:          #FCFCF7;
+      --bg-alt:      #F4F4EE;
+      --bg-border:   #D8D9D3;
+      --ink:         #1C1C1A;
+      --ink-mid:     #3C3C38;
+      --ink-soft:    #78776E;
+      --dark:        #1E2018;
+      --signal:      #A8D800;
+      --signal-dim:  #95BF00;
+      --font-serif:  'Hedvig Letters Serif', Georgia, serif;
+      --font-sans:   'Hedvig Letters Sans', system-ui, sans-serif;
+      --radius-pill: 100px;
+      --max-w:       760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 15px; line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      height: 60px;
+      display: flex; align-items: center;
+      background: rgba(252,252,247,0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--bg-border);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 52px; width: 100%;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo-text {
+      font-family: var(--font-serif);
+      font-size: 22px; font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      display: inline-flex; align-items: center;
+    }
+    .nav-logo-dot { color: var(--signal); }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 9px 22px; border-radius: var(--radius-pill);
+      background: var(--signal); color: var(--ink);
+      font-size: 13px; font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .nav-back:hover { background: var(--signal-dim); }
+
+    /* Page */
+    .page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 80px 24px 96px;
+    }
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(40px, 6vw, 56px);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.05;
+      margin-bottom: 18px;
+      color: var(--ink);
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-bottom: 56px;
+    }
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 14px;
+    }
+    p {
+      color: var(--ink-mid);
+      margin-bottom: 16px;
+      max-width: 64ch;
+    }
+    ul {
+      margin: 0 0 16px 22px;
+      color: var(--ink-mid);
+      max-width: 64ch;
+    }
+    li { margin-bottom: 6px; }
+    a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--ink-soft); }
+    strong { color: var(--ink); font-weight: 600; }
+
+    .contact-card {
+      margin-top: 48px;
+      padding: 28px 28px;
+      background: var(--bg-alt);
+      border: 1px solid var(--bg-border);
+      border-radius: 14px;
+    }
+    .contact-card-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+    }
+    .contact-card a {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .contact-card a:hover { color: var(--ink-soft); }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.6);
+      padding: 36px 0 22px;
+      font-size: 13px;
+    }
+    .footer-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 52px;
+      display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between;
+      gap: 16px;
+    }
+    .footer-brand {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-serif);
+      font-size: 18px; font-weight: 400;
+      letter-spacing: -0.02em;
+      color: #F4F4EE;
+      text-decoration: none;
+    }
+    .footer-brand .footer-dot { color: var(--signal); }
+    .footer-links {
+      display: flex; gap: 24px;
+      list-style: none; margin: 0; padding: 0;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.9); }
+    .footer-copy {
+      font-size: 11px;
+      color: rgba(255,255,255,0.18);
+      margin-top: 14px;
+      max-width: 1120px;
+      margin-left: auto; margin-right: auto;
+      padding: 14px 52px 0;
+    }
+
+    @media (max-width: 760px) {
+      .nav-inner { padding: 0 20px; }
+      .page { padding: 56px 20px 72px; }
+      .footer-inner { padding: 0 20px; flex-direction: column; align-items: flex-start; }
+      .footer-copy { padding: 14px 20px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-text">
+      <svg width="18" height="18" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-right:8px;vertical-align:middle;opacity:0.9;">
+        <path d="M20 2 C26 2 36 10 34 19 L26 17 L25 30 L20 35 L15 30 L14 17 L6 19 C4 10 14 2 20 2Z"/>
+      </svg>planesignal<span class="nav-logo-dot">.</span></a>
+    <a href="index.html" class="nav-back">Back to site</a>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: 9 May 2026</div>
+
+  <p>This Privacy Policy explains how planesignal ("<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") collects, uses, and protects information when you visit <a href="https://planesignal.com">planesignal.com</a> or get in touch with us about a brand sponsorship or creator partnership.</p>
+
+  <p>We keep things simple. We only collect what we need to do our job, we don't sell your data, and we don't track you around the internet.</p>
+
+  <h2>What we collect</h2>
+  <p>When you submit a form on this site (the "Get a quote", "Apply to join", or contact form), we collect the information you choose to share with us, which may include:</p>
+  <ul>
+    <li>Your name and email address</li>
+    <li>Your company, brand, or channel details</li>
+    <li>Budget range, audience size, niche, or any other context you provide</li>
+    <li>Any free-text notes you include in the message field</li>
+  </ul>
+  <p>We do not collect this information automatically. You give it to us by filling in the form.</p>
+
+  <h2>Cookies and analytics</h2>
+  <p>This site does not use marketing cookies, advertising trackers, or third-party analytics tools. The only cookies that may be set are strictly necessary ones served by the platforms our forms run on.</p>
+
+  <h2>How we use your information</h2>
+  <p>We use the information you provide to:</p>
+  <ul>
+    <li>Reply to your enquiry and discuss a potential partnership</li>
+    <li>Match brands with creators (or vice versa) where relevant</li>
+    <li>Keep records of campaigns, contracts, and payments we work on together</li>
+    <li>Send you occasional updates about your campaign or enquiry</li>
+  </ul>
+  <p>We will not use your information for marketing emails you didn't ask for, and we will not pass it to anyone outside the partnership you contacted us about without telling you first.</p>
+
+  <h2>Where your data is stored</h2>
+  <p>Form submissions are processed and delivered to us by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>, which forwards them to our email inbox. Email communication is handled by standard email providers. We rely on these providers' own security and privacy practices to keep your data safe in transit and at rest.</p>
+
+  <h2>How long we keep it</h2>
+  <p>We keep enquiry data for as long as we're working together, plus a reasonable period afterwards for our own records (typically up to 24 months). If your enquiry doesn't lead to a partnership, we will delete or archive it on request.</p>
+
+  <h2>Your rights</h2>
+  <p>You can ask us at any time to:</p>
+  <ul>
+    <li>Tell you what information we hold about you</li>
+    <li>Correct anything that's wrong</li>
+    <li>Delete your information from our records</li>
+    <li>Stop using your information for any specific purpose</li>
+  </ul>
+  <p>Just email us using the address below and we'll handle it.</p>
+
+  <h2>Third-party links</h2>
+  <p>This site may link to creator channels, brand websites, or social platforms. Once you click through, you're on their site, under their privacy terms, not ours.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change how we handle data, we'll update this page and refresh the "last updated" date at the top.</p>
+
+  <div class="contact-card">
+    <div class="contact-card-label">Questions about your data?</div>
+    <a href="mailto:umar@planesignal.com">umar@planesignal.com</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-brand">
+      <svg width="18" height="18" viewBox="0 0 40 40" fill="#F4F4EE" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2 C26 2 36 10 34 19 L26 17 L25 30 L20 35 L15 30 L14 17 L6 19 C4 10 14 2 20 2Z"/>
+      </svg>
+      planesignal<span class="footer-dot">.</span></a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="mailto:umar@planesignal.com">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-copy">© 2026 planesignal. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
